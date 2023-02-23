@@ -1,6 +1,6 @@
 import React from 'react'
 import useCloseMenu from 'src/hooks/useCloseMenu'
-import CardMenu from '../UI/cardMenu'
+import CardMenu from '../UI/CardMenu'
 
 const HeaderMenu = ({ toggleMenuHandler }) => {
     const cardRef = useCloseMenu(toggleMenuHandler);

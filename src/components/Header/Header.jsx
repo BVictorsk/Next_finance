@@ -1,7 +1,7 @@
-import useMenu from "src/hooks/useMenu";
 import Image from "next/image";
-import styles from "./Header.module.scss"
 import HeaderMenu from "./HeaderMenu";
+import useMenu from "src/hooks/useMenu";
+import styles from "./Header.module.scss"
 
 const Header = () => {
 

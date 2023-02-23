@@ -1,7 +1,7 @@
 import React from 'react'
 import CategoryCard from './categoryCard'
-import styles from'./allCards.module.scss'
 import NoCard from './noCard'
+import styles from'./allCards.module.scss'
 
 const DUMMY_DATA = [
     { id: 1, title: 'essencials', amount: 440, percentage: 10 },

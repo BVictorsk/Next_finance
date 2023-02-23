@@ -1,6 +1,6 @@
-import styles from './noCard.module.scss';
 import { TbPlus } from 'react-icons/tb'
 import React from 'react'
+import styles from './noCard.module.scss';
 
 const NoCard = () => {
   return (

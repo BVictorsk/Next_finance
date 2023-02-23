@@ -1,9 +1,8 @@
-import styles from'./categoryCard.module.scss'
 import { TbPencil } from 'react-icons/tb'
 import useGetCurrency from 'src/hooks/useGetCurrency';
 import CategoryMenu from '../CategoryMenu/categoryMenu';
 import useMenu from 'src/hooks/useMenu';
-
+import styles from'./categoryCard.module.scss'
 
 const CategoryCard = ({ data }) => {
 
