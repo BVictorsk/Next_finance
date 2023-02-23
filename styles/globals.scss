@@ -27,3 +27,16 @@ h2, .h2{
     font-weight: 500;
     color: $black;
 }
+
+.icon {
+    color: $text;
+
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &.hover {
+        &:hover {
+            color: $income;
+        }
+    }
+}
