@@ -1,6 +1,7 @@
 import React from 'react'
-import CategoryCard from './categoryCard'
-import NoCard from './noCard'
+import CategoryCard from './CategoryCard'
+import NoCard from './NoCard'
+import Modal from '../UI/Modal'
 import styles from'./allCards.module.scss'
 
 const DUMMY_DATA = [
@@ -14,10 +15,13 @@ const AllCards = () => {
   const cards = DUMMY_DATA.map(category => <CategoryCard key={category.id} data={category} />)
 
   return (
+    <>
+    <Modal />
     <section className={styles.section}>
       {cards}
       <NoCard />
     </section>
+    </>
   )
 }
 

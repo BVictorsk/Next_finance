@@ -1,6 +1,6 @@
 import { TbPencil } from 'react-icons/tb'
 import useGetCurrency from 'src/hooks/useGetCurrency';
-import CategoryMenu from '../CategoryMenu/categoryMenu';
+import CategoryMenu from '../CategoryMenu/CategoryMenu';
 import useMenu from 'src/hooks/useMenu';
 import styles from'./categoryCard.module.scss'
 
