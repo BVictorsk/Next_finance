@@ -1,9 +1,13 @@
+import useCloseMenu from 'src/hooks/useCloseMenu';
 import React from 'react'
 import CardMenu from '../UI/cardMenu'
 
-const CategoryMenu = () => {
+const CategoryMenu = ({ toggleMenuHandler }) => {
+
+  const menuRef = useCloseMenu(toggleMenuHandler);
+
   return (
-    <CardMenu>
+    <CardMenu ref={menuRef}>
         <li>Editar</li>
         <li>Adicionar</li>
         <li>Descontar</li>
