@@ -1,40 +1,39 @@
-import React, { useEffect, useState } from 'react'
-import { MdClose } from 'react-icons/md'
+import { useState, useEffect } from 'react';
+import { MdClose } from 'react-icons/md';
 import ReactDOM from 'react-dom';
-import styles from './modal.module.scss'
+import styles from './Modal.module.scss';
 
-const Modal = ( isOpen = false, onClose, title, children ) => {
+const Modal = ({isOpen = false, onClose, title, children}) => {
 
-    const [ isBrowser, setIsBrowser ] = useState(false);
+  const [isBrowser, setIsBrowser] = useState(false);
 
-    useEffect(() => {
-        setIsBrowser(true);
-    }, []);
+  useEffect(() => {
+    setIsBrowser(true);
+  }, []);
 
-    const modalWrapper = isOpen ? (
-        <>
-        <div className={styles.modal}>
-            <div className={styles.heading}>
-                <h2>{title}</h2>
-                <button onClick={onClose}>
-                    <MdClose className='icon hover' />
-                </button>
-            </div>
-            {children}
+  const modalWrapper = isOpen ? (
+    <>
+      <div className={styles.modal}>
+        <div className={styles.heading}>
+          <h2>{title}</h2>
+          <button onClick={onClose}>
+            <MdClose className='icon hover'/>
+          </button>
         </div>
-        <div className={styles.overlay} onClick={onClose}></div>
-        </>
-    ) : null;
+        {children}
+      </div>
+      <div className={styles.overlay} onClick={onClose}></div>
+    </>
+  ) : null;
 
-    if( isBrowser) {
-        return ReactDOM.createPortal(
-            modalWrapper,
-            document.getElementById('modal-root')
-          );
-    } else {
-        return null;
-    }
-
+  if (isBrowser) {
+    return ReactDOM.createPortal(
+      modalWrapper,
+      document.getElementById('modal-root')
+    );
+  } else {
+    return null;
+  }
 };
 
-export default Modal
+export default Modal;

@@ -1,7 +1,7 @@
 import React from 'react'
 import CategoryCard from './CategoryCard'
 import NoCard from './NoCard'
-import Modal from '../UI/Modal'
+import AddAmount from './modals/AddAmount'
 import styles from'./allCards.module.scss'
 
 const DUMMY_DATA = [
@@ -16,7 +16,8 @@ const AllCards = () => {
 
   return (
     <>
-    <Modal />
+    <AddAmount />
+
     <section className={styles.section}>
       {cards}
       <NoCard />
