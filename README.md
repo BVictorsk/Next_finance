@@ -11,8 +11,8 @@
 ## Core Technologies
 <div style="display: inline_block">
   <img align="center" alt="html5" src="https://img.shields.io/badge/HTML5-FF5900?style=for-the-badge&logo=html5&logoColor=white" />
-  <img align="center" alt="scss" src="https://img.shields.io/badge/SCSS-009DEB?style=for-the-badge&logo=scss&logoColor=white" />
-  <img align="center" alt="next" src="https://img.shields.io/badge/NextJS-42424?style=for-the-badge&logo=next&logoColor=black" />
+  <img align="center" alt="sass" src="https://img.shields.io/badge/Sass-F82CDF?style=for-the-badge&logo=sass&logoColor=white" />
+  <img align="center" alt="next" src="https://https://img.shields.io/badge/next-000?style=for-the-badge&logo=next.js&logoColor=white" />
   <img align="center" alt="react.js" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 </div>
 <br/>
