@@ -3,6 +3,10 @@ import CategoryCard from './CategoryCard'
 import NoCard from './NoCard'
 import AddAmount from './modals/AddAmount'
 import styles from'./allCards.module.scss'
+import TransferAmount from './modals/TransferAmount'
+import EditCategory from './modals/EditCategory'
+import SubtractAmount from './modals/SubtractAmount'
+import AddCategory from './modals/AddCategory'
 
 const DUMMY_DATA = [
     { id: 1, title: 'essencials', amount: 440, percentage: 10 },
@@ -17,6 +21,10 @@ const AllCards = () => {
   return (
     <>
     <AddAmount />
+    <SubtractAmount />
+    <TransferAmount />
+    <EditCategory />
+    <AddCategory />
 
     <section className={styles.section}>
       {cards}

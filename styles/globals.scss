@@ -35,6 +35,12 @@ p, .p {
     color: $text;
 }
 
+.caption {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $text;
+}
+
 .btn {
     border: none;
 
@@ -50,15 +56,30 @@ p, .p {
 
     &.btn-primary {
         background-color: $income;
+
         color: $white;
 
         &:hover {
             background-color: lighten($income, 3);
         }
     }
+
+    &.btn-secondary {
+        background-color: transparent;
+        
+        border: 1px solid $income;
+
+        color: $income;
+
+        &:hover {
+            border: 1px solid lighten($income, 3);
+
+            color: lighten($income, 3);
+        }
+    }
 }
 
-input[type='text'] {
+input[type='text'], select {
     border: 1px solid $text;
     border-radius: .5rem;
 
@@ -75,6 +96,21 @@ input[type='text'] {
 
     &.max-width {
         max-width: 13rem;
+    }
+
+}
+
+input[type='percentage'] {
+    border: 1px solid $text;
+    border-radius: .5rem;
+
+    padding: .6rem 1rem;
+
+    width: 10rem;
+
+    &::placeholder {
+        font-weight: 500;
+        color: rgba($text, .5);
     }
 }
 

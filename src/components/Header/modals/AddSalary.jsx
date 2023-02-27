@@ -1,29 +1,25 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Modal from 'src/components/UI/Modal'
-import { toggleAddAmount } from 'src/store/ui-slice'
+import { toggleAddSalary } from 'src/store/ui-slice'
 import styles from '../../../components/UI/Modal.module.scss'
 
-const AddAmount = () => {
+const AddSalary = () => {
 
-    const { isVisible, category } = useSelector((state) => state.ui.addAmount);
+    const { isVisible, category } = useSelector((state) => state.ui.addSalary);
     const dispatch = useDispatch();
 
   return (
-    <Modal isOpen={isVisible} onClose={() => dispatch(toggleAddAmount(null))} title="Add Amount">
+    <Modal isOpen={isVisible} onClose={() => dispatch(toggleAddSalary(null))} title="Adicionar salario">
         <div>
             <form className='.form'>
-                <div className={styles['label-input']}>
-                    <label htmlFor="title" className='p'>Titulo</label>
-                    <input type="text" id='title' name='title' placeholder='ex: venda' />
-                </div>
-                <div className={styles['label-input']}>
+            <div className={styles['label-input']}>
                     <label htmlFor="title" className='p'>Valor</label>
                     <input type="text" id='amount' name='amount' placeholder='R$' className='max-width' />
                 </div>
                 <div className={styles.buttons}>
                     <button type='submit' className='btn btn-primary' >
-                        Add
+                        Adicionar
                     </button>
                 </div>
             </form>
@@ -32,4 +28,4 @@ const AddAmount = () => {
   )
 }
 
-export default AddAmount
+export default AddSalary;

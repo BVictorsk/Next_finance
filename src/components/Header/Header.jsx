@@ -2,12 +2,18 @@ import Image from "next/image";
 import HeaderMenu from "./HeaderMenu";
 import useMenu from "src/hooks/useMenu";
 import styles from "./Header.module.scss"
+import AddSalary from "./modals/AddSalary";
 
 const Header = () => {
 
     const [ isVisible, toggleMenuHandler ] = useMenu();
 
+
     return (
+        <>
+
+        <AddSalary />
+
         <section className={styles.header}>
             <div className={styles.message}>
                 <h1>Ola!</h1>
@@ -18,6 +24,7 @@ const Header = () => {
                 {isVisible && <HeaderMenu toggleMenuHandler={toggleMenuHandler}/>}
             </div>
         </section>
+        </>
     )
 }
 
