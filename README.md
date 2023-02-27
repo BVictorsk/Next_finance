@@ -21,7 +21,7 @@
 To install Next_Finance, follow these steps:
 
 ```
-git clone 
+git clone https://github.com/BVictorsk/Next_finance.git
 ```
 
 ## 📫 Contributing to Next_Finance
