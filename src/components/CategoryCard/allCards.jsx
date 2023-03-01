@@ -7,11 +7,11 @@ import TransferAmount from './modals/TransferAmount'
 import EditCategory from './modals/EditCategory'
 import SubtractAmount from './modals/SubtractAmount'
 import AddCategory from './modals/AddCategory'
-import useGetDocs from 'src/hooks/useGetDocs'
+import { useSelector } from 'react-redux'
 
 const AllCards = () => {
 
-  const categories = useGetDocs('categorias')
+  const categories = useSelector(state => state.app.categories)
 
   const cards = categories.map((category) => (
     <CategoryCard key={category.id} data={category} />
